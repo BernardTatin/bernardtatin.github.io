@@ -294,6 +294,8 @@ footer {
 	.entry {
     	p, li, blockquote {
         	text-align: justify;
+            max-width: 680px;
+            font-family: "Gillius ADF", $helveticaNeue;
         }
     }
 }
