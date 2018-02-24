@@ -2,14 +2,10 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+I was quietly surfing when a now forgotten post told me to use _Githup_ to create a _great_ developper blog. And here we are, you, the reader, and me, the french developper with his not so good English.
 
-### More Information
+![Loire in summer]({{site.baseurl}}/images/loire-in-summer.jpg)
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
