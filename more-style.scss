@@ -1,0 +1,25 @@
+// more-style.scss
+// les entrées de blog
+
+.post, .page {
+	.entry {
+    	p, li, blockquote {
+        	text-align: justify;
+            max-width: 680px;
+            font-family: "Gillius ADF", $helveticaNeue;
+            line-height: 1.8;
+        }
+        blockquote {
+        	em {
+            	font-style: normal;
+            }
+        }
+    }
+}
+
+.align_center {
+	text-align:center;
+}
+.small_font {
+	font-size: 0.75em;
+}
