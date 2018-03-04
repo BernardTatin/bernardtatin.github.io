@@ -19,9 +19,11 @@
             	font-style: normal;
             }
         }
-        pre {
-            code {
-                font-size: 0.80em;
+        .highlight {
+            pre.highlight {
+                code {
+                    font-size: 0.80em;
+                }
             }
         }
     }
