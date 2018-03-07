@@ -3,6 +3,8 @@
 
 .post, .page {
 	.entry {
+        border-left: 1px solid #666;
+        padding-left: 8px;
     	p, li, blockquote {
         	text-align: justify;
             max-width: 680px;
@@ -27,6 +29,13 @@
             }
         }
     }
+    .date {
+        margin-top: 10px;
+    }
+}
+
+article.post {
+  border-bottom: 1px solid #eee;
 }
 
 .align_center {
