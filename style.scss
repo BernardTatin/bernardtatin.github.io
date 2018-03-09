@@ -16,12 +16,60 @@
 
 html {
   font-size: 100%;
-}
 
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  body {
+    background: $white;
+    font: 19px/1.4 $helvetica;
+    font-family: "Vollkorn", Palatino, Times;
+
+    color: $darkGray;
+
+    h1,h2,h3,h4,h5,h6 {
+      text-align: center;
+      color: $darkerGray;
+      font-weight: normal;
+
+      line-height: 1.7;
+      margin: 1em 0 15px;
+      padding: 0;
+
+      @include mobile {
+        line-height: 1.4;
+      }
+    }
+    section {
+      article {
+        header {
+          h1 {
+            color: #c45;
+          }
+        }
+        section {
+          h2, h3, h4,h5,h6 {
+            font-style:italic;
+            color: #45c;
+          }
+          p, ul, ol, li, blockquote {
+            text-align: justify;
+          }
+          blockquote {
+            font-style: italic;
+            padding-left: 10px;
+            border-left: 2px solid #c45;
+            em,i {
+              font-style:normal;
+            }
+          }
+        }
+        footer {
+          date {
+            font-style: italic;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+}
 }
 
 .container {
@@ -32,17 +80,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Impact, $helveticaNeue;
-  color: $darkerGray;
-  font-weight: normal;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
 }
 
 h1 {
@@ -289,4 +326,3 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-@import "more-style";

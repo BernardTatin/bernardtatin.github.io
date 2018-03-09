@@ -2,11 +2,11 @@
 layout: default
 published: true
 ---
-<div>
+<header>
   <table>
     <tbody>
     <tr><td>
-      <img src="/images/EnConstruction.jpg" alt="Loire in summer" />
+      <img src="/images/EnConstruction.jpg" alt="En construction" />
     </td></tr>
     </tbody>
     <tfoot>
@@ -15,19 +15,25 @@ published: true
       	</td></tr>
     </tfoot>
   </table>
-</div>
+</header>
 
-<div class="posts">
+<section>
   {% for post in site.posts %}
-    <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="entry">
-        <!-- {{ post.excerpt }} -->
-      	{{ post.content }}
-      </div>
-      <div class="date">
-    	Written on {{ post.date | date: "%B %e, %Y" }}
-  	  </div>
+    <article>
+      <header>
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      </header>
+      <section>
+          <!-- {{ post.excerpt }} -->
+          {{ post.content }}
+      </section>
+
+      <footer>
+
+        <date>
+          Written on {{ post.date | date: "%B %e, %Y" }}
+        </date>
+      </footer>
     </article>
   {% endfor %}
-</div>
+</section>
