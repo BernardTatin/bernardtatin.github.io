@@ -26,7 +26,6 @@ html {
 
     h1,h2,h3,h4,h5,h6 {
       text-align: center;
-      color: $darkerGray;
       font-weight: normal;
 
       line-height: 1.7;
@@ -37,20 +36,41 @@ html {
         line-height: 1.4;
       }
     }
+    h1 {
+      font-size: 30px;
+      a {
+        color: inherit;
+      }
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    section {
+      margin: 0 auto;
+      max-width: 640px;
+      padding: 0 10px;
+      width: 100%;
+
     section {
       article {
         header {
           h1 {
-            color: #c45;
+            width: 100%;
+            border-bottom: 3px solid #c45;
           }
         }
         section {
-          h2, h3, h4,h5,h6 {
-            font-style:italic;
-            color: #45c;
-          }
           p, ul, ol, li, blockquote {
             text-align: justify;
+          }
+          p {
+            margin: 15px 0;
           }
           blockquote {
             font-style: italic;
@@ -69,42 +89,11 @@ html {
         }
       }
     }
-}
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
   }
 }
-
-h2 {
-  font-size: 24px;
 }
 
-h3 {
-  font-size: 20px;
-}
 
-h4 {
-  font-size: 18px;
-  color: $gray;
-}small_font
-
-p {
-  margin: 15px 0;
-}
 
 a {
   color: $blue;
@@ -195,7 +184,6 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-  background-color: $jonquille;
 
   @include mobile {
     text-align: center;
