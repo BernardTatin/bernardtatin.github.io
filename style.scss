@@ -59,12 +59,6 @@ html {
 
       section {
         article {
-          header {
-            h1 {
-              width: 100%;
-              border-bottom: 3px solid #c45;
-            }
-          }
           section {
             p, ul, ol, li, blockquote {
               text-align: justify;
@@ -93,7 +87,14 @@ html {
   }
 }
 
-
+article {
+  header {
+    h1 {
+      width: 100%;
+      border-bottom: 3px solid #c45;
+    }
+  }
+}
 
 a {
   color: $blue;
