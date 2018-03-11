@@ -7,7 +7,6 @@
 
 @import "reset";
 @import "variables";
-@import "more-variables";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -15,77 +14,87 @@
 /**************/
 
 html {
-  font-size: 100%;
+    font-size: 100%;
 
-  body {
-    background: $white;
-    font: 19px/1.4 $helvetica;
-    font-family: "Vollkorn", Palatino, Times;
+    body {
+        background: $white;
+        font: 19px / 1.4 $helvetica;
+        font-family: "Vollkorn", Palatino, Times;
+        color: $darkGray;
 
-    color: $darkGray;
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+            font-weight: normal;
+            line-height: 1.7;
+            margin: 1em 0 15px;
+            padding: 0;
 
-    h1,h2,h3,h4,h5,h6 {
-      text-align: center;
-      font-weight: normal;
-
-      line-height: 1.7;
-      margin: 1em 0 15px;
-      padding: 0;
-
-      @include mobile {
-        line-height: 1.4;
-      }
-    }
-    h1 {
-      font-size: 30px;
-      a {
-        color: inherit;
-      }
-    }
-    h2 {
-      font-size: 24px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    h4 {
-      font-size: 18px;
-    }
-    section {
-      margin: 0 auto;
-      max-width: 640px;
-      padding: 0 10px;
-      width: 100%;
-
-      section {
-        article {
-          section {
-            p, ul, ol, li, blockquote {
-              text-align: justify;
+            @include mobile {
+                line-height: 1.4;
             }
-            p {
-              margin: 15px 0;
-            }
-            blockquote {
-              font-style: italic;
-              padding-left: 10px;
-              border-left: 2px solid #c45;
-              em,i {
-                font-style:normal;
-              }
-            }
-          }
-          footer {
-            date {
-              font-style: italic;
-              font-size: 0.9em;
-            }
-          }
         }
-      }
+
+        h1 {
+            font-size: 30px;
+
+            a {
+                color: inherit;
+            }
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        section {
+            margin: 0 auto;
+            max-width: 640px;
+            padding: 0 10px;
+            width: 100%;
+
+            section {
+                article {
+                    section {
+                        p, ul, ol, li, blockquote {
+                            text-align: justify;
+                        }
+
+                        p {
+                            margin: 15px 0;
+                        }
+
+                        blockquote {
+                            font-style: italic;
+                            padding-left: 10px;
+                            border-left: 2px solid #c45;
+
+                            em, i {
+                                font-style: normal;
+                            }
+                        }
+                    }
+
+                    footer {
+                        font-size: 0.9em;
+
+                        date {
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
+
 
 article {
   header {
