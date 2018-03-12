@@ -1,0 +1,8 @@
+<div class="prevnext">
+  {% if page.previous %}
+      <a href="{{ site.baseurl }}{{ page.previous.url }}">previous</a>
+  {% endif %}
+  {% if page.next %}
+      <a href="{{ site.baseurl }}{{ page.next.url }}">next</a>
+  {% endif %}
+</div>
