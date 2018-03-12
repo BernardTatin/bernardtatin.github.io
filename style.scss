@@ -65,6 +65,14 @@ html {
 }
 
 article {
+    header {
+        text-align: center;
+        h1 {
+            width: 100%;
+            border-bottom: 3px solid #c45;
+        }
+    }
+
     section {
         p, ul, ol, li, blockquote {
             text-align: justify;
@@ -86,6 +94,8 @@ article {
     }
 
     footer {
+        padding: 20px 0;
+        text-align: center;
         font-size: 0.9em;
 
         date {
@@ -95,15 +105,12 @@ article {
 }
 
 
-
-article {
-  header {
-    h1 {
-      width: 100%;
-      border-bottom: 3px solid #c45;
+.prevnext {
+    a {
+        padding: 8px;
     }
-  }
 }
+
 
 a {
   color: $blue;
@@ -315,10 +322,6 @@ nav {
   background-color: $lightGray;
 }
 
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
