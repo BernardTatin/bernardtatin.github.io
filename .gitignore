@@ -12,3 +12,6 @@ package.json
 # IDE
 .*.swp
 .vscode/
+
+# temporary files
+tmp/
