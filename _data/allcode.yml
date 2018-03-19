@@ -1,0 +1,12 @@
+# ==========================================
+# allcode.yml
+# ==========================================
+
+- name: current .vimrc
+  url: https://gist.github.com/BernardTatin/54fece9a4c50c68a118c5ca3de583990.js
+  type: gist
+
+- name: old .vimrc
+  url: https://gist.github.com/BernardTatin/a5d50db3e28cc9fbb45f50a16afe8498.js
+  type: gist
+

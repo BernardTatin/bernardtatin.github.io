@@ -1,0 +1,19 @@
+---
+layout: default
+published: true
+---
+
+<article>
+  <header>
+      <h1>{{ page.title }}</h1>
+  </header>
+  <section>
+      {% for code in site.data.allcode %}
+      <h2>{{ code.name }}</h2>
+        {% if code.type == 'gist' %}
+        <script src="{{ code.url }}"></script>
+        {% endif %}
+      {% endfor %}
+  </section>
+</article>
+
