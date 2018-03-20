@@ -12,6 +12,7 @@ package.json
 # IDE
 .*.swp
 .vscode/
+*.xmp
 
 # temporary files
 tmp/
