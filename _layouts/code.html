@@ -4,10 +4,12 @@ published: true
 ---
 
 <article>
+    [TOC]
   <header>
       <h1>{{ page.title }}</h1>
   </header>
   <section>
+
       {% for code in site.data.allcode %}
       <h2>{{ code.name }}</h2>
         {% if code.type == 'gist' %}
